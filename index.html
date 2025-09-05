@@ -1,95 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>QuickBite - Your Favorite Food, Delivered Fast</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <!-- Header -->
     <header class="main-header">
-        <div class="container">
-            <a href="#" class="logo">QuickBite</a>
-            <nav class="main-nav">
-                <a href="#features">Features</a>
-                <a href="#">Restaurants</a>
-                <a href="#">Sign Up</a>
-                <a href="#">Log In</a>
-            </nav>
-        </div>
+      <div class="container">
+        <a href="#" class="logo">QuickBite</a>
+        <nav class="main-nav">
+          <a href="#features">Features</a>
+          <a href="restaurants.html">Restaurants</a>
+          <a href="menu.html">Menu</a>
+          <a href="cart.html">Your Cart</a>
+          <a href="signup.html">Sign Up</a>
+          <a href="login.html">Log In</a>
+          <a href="profile.html">Profile</a>
+        </nav>
+      </div>
     </header>
 
     <main>
-        <!-- Hero Section -->
-        <section class="hero">
-            <div class="container">
-                <h1>Your Favorite Food, Delivered Fast.</h1>
-                <p>Discover local restaurants, track your order in real-time, and pay securely.</p>
-                <form class="search-form">
-                    <input type="text" placeholder="Enter your delivery address">
-                    <button type="submit">Find Food</button>
-                </form>
-            </div>
-        </section>
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="container">
+          <h1>Your Favorite Food, Delivered Fast.</h1>
+          <p>
+            Discover local restaurants, track your order in real-time, and pay
+            securely.
+          </p>
+          <form class="search-form">
+            <input type="text" placeholder="Enter your delivery address" />
+            <button type="submit">Find Food</button>
+          </form>
+        </div>
+      </section>
 
-        <!-- Features Section -->
-        <section id="features" class="features">
-            <div class="container">
-                <h2>Why Choose QuickBite?</h2>
-                <div class="features-grid">
-                    <!-- Feature 1: Curated Restaurants -->
-                    <div class="feature-item">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor" class="bi bi-shop" viewBox="0 0 16 16">
-                            <path d="M2.97 1.35A1 1 0 0 1 3.73 1h8.54a1 1 0 0 1 .76.35l2.609 3.044A1.5 1.5 0 0 1 16 5.37v.255a2.375 2.375 0 0 1-4.25 1.458A2.37 2.37 0 0 1 9.875 8 2.37 2.37 0 0 1 8 7.083 2.37 2.37 0 0 1 6.125 8a2.37 2.37 0 0 1-1.875-.917A2.375 2.375 0 0 1 0 5.625V5.37a1.5 1.5 0 0 1 .361-.976zm1.78 4.275a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 1 0 2.75 0V5.37a.5.5 0 0 0-.12-.325L12.27 2H3.73L1.12 5.045A.5.5 0 0 0 1 5.37v.255a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0M1.5 8.5A.5.5 0 0 1 2 9v6h12V9a.5.5 0 0 1 1 0v6h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1V9a.5.5 0 0 1 .5-.5M4 15h3v-5H4zm5-5v5h3V10z"/>
-                        </svg>
-                        <h3>Curated Restaurants</h3>
-                        <p>Explore a hand-picked selection of the best local and national restaurants. From comfort food to fine dining, we have it all.</p>
-                    </div>
-                    <!-- Feature 2: Real-Time Tracking -->
-                    <div class="feature-item">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
-                            <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
-                        </svg>
-                        <h3>Real-Time Order Tracking</h3>
-                        <p>Watch your meal's journey from the kitchen to your doorstep with our live map tracking. No more guessing when your food will arrive.</p>
-                    </div>
-                    <!-- Feature 3: Secure Payments -->
-                    <div class="feature-item">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor" class="bi bi-shield-lock-fill" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" d="M8 0c-.69 0-1.843.265-2.928.56-1.11.3-2.229.655-2.887.87a1.52 1.52 0 0 0-1.044 1.262c-.596 4.477.787 7.795 2.465 9.99a11.8 11.8 0 0 0 2.517 2.453c.386.273.744.54 1.09.777l.025.017c.22.15.46.296.7.413a.7.7 0 0 0 .701 0c.239-.117.48-.263.7-.413l.025-.017c.345-.237.704-.504 1.09-.777a11.8 11.8 0 0 0 2.517-2.453c1.678-2.195 3.061-5.513 2.465-9.99a1.52 1.52 0 0 0-1.044-1.262c-.658-.215-1.777-.57-2.887-.87C9.843.265 8.69 0 8 0m0 5a1.5 1.5 0 0 1 .5 2.915l.385 1.99a.5.5 0 0 1-.491.595h-.788a.5.5 0 0 1-.49-.595l.384-1.99A1.5 1.5 0 0 1 8 5"/>
-                        </svg>
-                        <h3>Secure & Easy Payments</h3>
-                        <p>Pay with confidence using our secure payment system. We accept all major credit cards, Apple Pay, and Google Pay.</p>
-                    </div>
-                </div>
+      <!-- Features Section -->
+      <section id="features" class="features">
+        <div class="container">
+          <h2>Why Choose QuickBite?</h2>
+          <div class="features-grid">
+            <!-- Feature 1: Curated Restaurants -->
+            <div class="feature-item">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="64"
+                height="64"
+                fill="currentColor"
+                class="bi bi-shop"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M2.97 1.35A1 1 0 0 1 3.73 1h8.54a1 1 0 0 1 .76.35l2.609 3.044A1.5 1.5 0 0 1 16 5.37v.255a2.375 2.375 0 0 1-4.25 1.458A2.37 2.37 0 0 1 9.875 8 2.37 2.37 0 0 1 8 7.083 2.37 2.37 0 0 1 6.125 8a2.37 2.37 0 0 1-1.875-.917A2.375 2.375 0 0 1 0 5.625V5.37a1.5 1.5 0 0 1 .361-.976zm1.78 4.275a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 1 0 2.75 0V5.37a.5.5 0 0 0-.12-.325L12.27 2H3.73L1.12 5.045A.5.5 0 0 0 1 5.37v.255a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0M1.5 8.5A.5.5 0 0 1 2 9v6h12V9a.5.5 0 0 1 1 0v6h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1V9a.5.5 0 0 1 .5-.5M4 15h3v-5H4zm5-5v5h3V10z"
+                />
+              </svg>
+              <h3>Curated Restaurants</h3>
+              <p>
+                Explore a hand-picked selection of the best local and national
+                restaurants. From comfort food to fine dining, we have it all.
+              </p>
             </div>
-        </section>
+            <!-- Feature 2: Real-Time Tracking -->
+            <div class="feature-item">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="64"
+                height="64"
+                fill="currentColor"
+                class="bi bi-geo-alt-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"
+                />
+              </svg>
+              <h3>Real-Time Order Tracking</h3>
+              <p>
+                Watch your meal's journey from the kitchen to your doorstep with
+                our live map tracking. No more guessing when your food will
+                arrive.
+              </p>
+            </div>
+            <!-- Feature 3: Secure Payments -->
+            <div class="feature-item">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="64"
+                height="64"
+                fill="currentColor"
+                class="bi bi-shield-lock-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M8 0c-.69 0-1.843.265-2.928.56-1.11.3-2.229.655-2.887.87a1.52 1.52 0 0 0-1.044 1.262c-.596 4.477.787 7.795 2.465 9.99a11.8 11.8 0 0 0 2.517 2.453c.386.273.744.54 1.09.777l.025.017c.22.15.46.296.7.413a.7.7 0 0 0 .701 0c.239-.117.48-.263.7-.413l.025-.017c.345-.237.704-.504 1.09-.777a11.8 11.8 0 0 0 2.517-2.453c1.678-2.195 3.061-5.513 2.465-9.99a1.52 1.52 0 0 0-1.044-1.262c-.658-.215-1.777-.57-2.887-.87C9.843.265 8.69 0 8 0m0 5a1.5 1.5 0 0 1 .5 2.915l.385 1.99a.5.5 0 0 1-.491.595h-.788a.5.5 0 0 1-.49-.595l.384-1.99A1.5 1.5 0 0 1 8 5"
+                />
+              </svg>
+              <h3>Secure & Easy Payments</h3>
+              <p>
+                Pay with confidence using our secure payment system. We accept
+                all major credit cards, Apple Pay, and Google Pay.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-        <!-- Call to Action Section -->
-        <section class="cta">
-            <div class="container">
-                <h2>Ready to order?</h2>
-                <p>Create an account and get your first delivery free!</p>
-                <a href="#" class="cta-btn">Sign Up Now</a>
-            </div>
-        </section>
+      <!-- Call to Action Section -->
+      <section class="cta">
+        <div class="container">
+          <h2>Ready to order?</h2>
+          <p>Create an account and get your first delivery free!</p>
+          <a href="#" class="cta-btn">Sign Up Now</a>
+        </div>
+      </section>
     </main>
 
     <!-- Footer -->
     <footer class="main-footer">
-        <div class="container">
-            <div class="footer-links">
-                <a href="#">About Us</a>
-                <a href="#">Contact</a>
-                <a href="#">FAQ</a>
-                <a href="#">Terms of Service</a>
-                <a href="#">Privacy Policy</a>
-            </div>
-            <p class="copyright">&copy; 2025 QuickBite. All Rights Reserved.</p>
+      <div class="container">
+        <div class="footer-links">
+          <a href="#">About Us</a>
+          <a href="#">Contact</a>
+          <a href="#">FAQ</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Privacy Policy</a>
         </div>
+        <p class="copyright">&copy; 2025 QuickBite. All Rights Reserved.</p>
+      </div>
     </footer>
-
-</body>
+    <script src="quickbite.js"></script>
+  </body>
 </html>
