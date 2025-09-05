@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QuickBite - Restaurants</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="main-header">
+      <div class="container">
+        <a href="#" class="logo">QuickBite</a>
+        <nav class="main-nav">
+          <a href="index.html">Home</a>
+          <a href="restaurants.html">Restaurants</a>
+          <a href="menu.html">Menu</a>
+          <a href="cart.html">Your Cart</a>
+          <a href="signup.html">Sign Up</a>
+          <a href="login.html">Log In</a>
+          <a href="profile.html">Profile</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <!-- Restaurant Discovery Section -->
+      <section class="restaurant-list">
+        <div class="container">
+          <h1>Discover Restaurants</h1>
+          <form class="restaurant-search-form">
+            <input
+              type="text"
+              placeholder="Search restaurants or cuisines..."
+              class="restaurant-search-input"
+            />
+            <select class="restaurant-filter">
+              <option value="">All Cuisines</option>
+              <option value="Italian">Italian</option>
+              <option value="Indian">Indian</option>
+              <option value="Vegetarian">Vegetarian</option>
+            </select>
+            <select class="restaurant-filter">
+              <option value="">Any Price</option>
+              <option value="$">$</option>
+              <option value="$$">$$</option>
+              <option value="$$$">$$$</option>
+            </select>
+            <select class="restaurant-filter">
+              <option value="">Delivery Time</option>
+              <option value="20">Under 20 min</option>
+              <option value="30">Under 30 min</option>
+              <option value="45">Under 45 min</option>
+            </select>
+            <button type="submit">Search</button>
+          </form>
+          <div class="restaurants-grid">
+            <div class="restaurant-card">
+              <img
+                src="https://via.placeholder.com/240x120"
+                alt="Tasty Bites Logo"
+              />
+              <h2>Tasty Bites</h2>
+              <p>Cuisine: Italian</p>
+              <p>Delivery: 30-40 min</p>
+              <p>Rating: ⭐ 4.5 (1,200+)</p>
+              <button onclick="window.location.href='menu.html'">
+                View Restaurant
+              </button>
+            </div>
+            <div class="restaurant-card">
+              <img
+                src="https://via.placeholder.com/240x120"
+                alt="Spice Villa Logo"
+              />
+              <h2>Spice Villa</h2>
+              <p>Cuisine: Indian</p>
+              <p>Delivery: 25-35 min</p>
+              <p>Rating: ⭐ 4.8 (2,000+)</p>
+              <button onclick="window.location.href='menu.html'">
+                View Restaurant
+              </button>
+            </div>
+            <div class="restaurant-card">
+              <img
+                src="https://via.placeholder.com/240x120"
+                alt="Green Garden Logo"
+              />
+              <h2>Green Garden</h2>
+              <p>Cuisine: Vegetarian</p>
+              <p>Delivery: 20-30 min</p>
+              <p>Rating: ⭐ 4.6 (900+)</p>
+              <button onclick="window.location.href='menu.html'">
+                View Restaurant
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Restaurant Dashboard Overview (hidden by default, shown after selection) -->
+      <section class="restaurant-dashboard" style="display: none">
+        <div class="container">
+          <h1>Restaurant Dashboard</h1>
+          <div class="dashboard-panel">
+            <h2>Incoming Orders (Real-Time)</h2>
+            <div class="order-list">
+              <div class="order-card">
+                <h3>Order #1024</h3>
+                <p><strong>Customer:</strong> Jane Doe</p>
+                <p><strong>Address:</strong> 123 Main St</p>
+                <p><strong>Contact:</strong> (555) 123-4567</p>
+                <p>
+                  <strong>Items:</strong> Margherita Pizza x2, Garlic Bread x1
+                </p>
+                <p>
+                  <strong>Status:</strong>
+                  <span class="order-status">Pending</span>
+                </p>
+                <p><strong>Timestamps:</strong> 12:01 PM (Placed)</p>
+                <div class="order-actions">
+                  <button>Accept</button>
+                  <button>Reject</button>
+                  <button>Mark as Preparing</button>
+                  <button>Ready for Pickup</button>
+                  <button>Complete</button>
+                </div>
+              </div>
+              <!-- More order-cards as needed -->
+            </div>
+          </div>
+          <div class="order-tracking">
+            <h2>Real-Time Order Tracking</h2>
+            <p>
+              Track each order’s status and see live updates as it moves from
+              pending to completed. Customer details, items, and timestamps are
+              displayed for every order. Delivery partner assignment and live
+              location tracking are available for each delivery.
+            </p>
+          </div>
+          <div class="notifications-panel">
+            <h2>Notifications</h2>
+            <p>
+              Instant alerts appear for new orders. Customers receive automatic
+              updates when their order status changes.
+            </p>
+          </div>
+          <div class="payment-settlement">
+            <h2>Payment & Settlement</h2>
+            <p>
+              See which orders are paid online and which are cash on delivery.
+              Secure payment verification and daily/weekly earnings summaries
+              are available here.
+            </p>
+          </div>
+          <div class="analytics-insights">
+            <h2>Analytics & Insights</h2>
+            <p>
+              View your most popular dishes, peak order times, and customer
+              feedback ratings to help improve your service and menu.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer class="main-footer">
+      <div class="container">
+        <div class="footer-links">
+          <a href="#">About Us</a>
+          <a href="#">Contact</a>
+          <a href="#">FAQ</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Privacy Policy</a>
+        </div>
+        <p class="copyright">&copy; 2025 QuickBite. All Rights Reserved.</p>
+      </div>
+    </footer>
+    <script src="quickbite.js"></script>
+  </body>
+</html>
